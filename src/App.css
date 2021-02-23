@@ -1,0 +1,79 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#legend li span {
+  width: 36px;
+  height: 12px;
+  display: inline-block;
+  margin: 0 5px 8px 0;
+  vertical-align: -9.4px;
+}
+#legend ul {
+  list-style: none;
+  font: 12px Verdana;
+  white-space: nowrap;
+}
+
+#chartjs-tooltip {
+  opacity: 1;
+  position: absolute;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  min-width: 200px;
+}
+
+.chartjs-render-monitor{
+  border-style: groove;
+}
+
+.lineContainer {
+ 
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: inherit;
+  flex: 1 1 0px;
+  min-height: 30vh;
+}
+
+
+#legendBottom {
+  font-family: Georgia, "Times New Roman", Times, serif;
+        font-size:24px;
+	margin-top: 5px; margin-bottom: 0px;
+	text-align: center;
+        font-weight: normal;
+        color: #222;
+} 
+
+#legendRight{
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+        font-size:24px;
+        margin-top: 5px; margin-bottom: 0px;
+        font-weight: normal;
+        color: #222;
+
+  /* Abs positioning makes it not take up vert space */
+  position: absolute;
+  top: 300px;
+  left: 0;
+
+  /* Border is the new background */
+  background: none;
+
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+
+
+
